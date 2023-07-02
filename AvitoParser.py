@@ -2,7 +2,6 @@
 
 """
 AvitoParser - Поиск объявлений на avito.ru по цене или ключевым словам
-by Duff89 (https://github.com/Duff89)
 """
 __version__ = 1.06
 
@@ -81,16 +80,6 @@ class Window(tkinter.Tk):
 
         self.test_button = tkinter.Button(self, text="Тест", padx=50, command=self.telegram_log_test)
         self.test_button.grid(row=1, column=2, padx=0, pady=0)
-
-        link_label = tkinter.Label(self, text="Связаться с автором или сообщить о проблеме",
-                                   fg="blue", cursor="hand2")
-        link_label.grid(column=1, row=200, pady=10)
-        link_label.bind("<Button-1>", lambda e: webbrowser.open_new("https://github.com/Duff89/parser_avito"))
-
-        link_label = tkinter.Label(self, text="Поддержать развитие проекта",
-                                   fg="blue", cursor="hand2")
-        link_label.grid(column=1, row=201, pady=10)
-        link_label.bind("<Button-1>", lambda e: webbrowser.open_new("https://yoomoney.ru/to/410014382689862"))
 
 
         # кнопка "Старт"
